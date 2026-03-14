@@ -145,7 +145,7 @@ export default function RegisterEntry() {
               {VEHICLE_TYPES.map(t => (
                 <div key={t.value} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 10px', background: t.value === form.vehicleType ? 'var(--accent-subtle)' : 'var(--bg-elevated)', borderRadius: 5, marginBottom: 6, border: t.value === form.vehicleType ? '1px solid var(--accent-dim)' : '1px solid transparent' }}>
                   <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t.label}</span>
-                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.78rem', color: 'var(--accent)' }}>${t.rate}.00 / hora</span>
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.78rem', color: 'var(--accent)' }}>RD${t.rate}.00 / hora</span>
                 </div>
               ))}
               <p style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginTop: 10, lineHeight: 1.5 }}>
